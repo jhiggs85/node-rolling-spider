@@ -1,7 +1,7 @@
 # Rolling Spider for Node.js
 
 An implementation of the networking protocols (Bluetooth LE) used by the
-Parrot MiniDrone - [Rolling Spider](http://www.parrot.com/usa/products/rolling-spider/) and [Airborne Night Drone - MACLANE](http://www.parrot.com/usa/products/airborne-night-drone/). This offers an off-the-shelf $99 USD drone that can be controlled by JS -- yay!
+Parrot MiniDrone - [Rolling Spider](http://www.parrot.com/usa/products/rolling-spider/).
 
 Prerequisites:
 
@@ -10,12 +10,12 @@ Prerequisites:
 To install:
 
 ```bash
-npm install rolling-spider
+npm install spi-net
 ```
 
 ## Status
 
-Stable!
+Version 1.0
 
 
 ## Getting Started
@@ -106,8 +106,6 @@ And there you have it, you can now control your drone.
 
 
 ### Flying Multiple MiniDrones
-
-[![Spider Swarm](http://img.youtube.com/vi/PLWJMR61Qs0/0.jpg)](http://www.youtube.com/watch?v=PLWJMR61Qs0)
 
 Previous versions of the `rolling-spider` library required you to specify the UUID for your drone through a discover process. This has been removed in favor of just using the first BLE device that broadcasts with "RS_" as its localname. ***If you are flying multiple minidrones or in a very populated BLE area***, you will want to use the discovery process in order to identify specifically the drone(s) you want to control. Use the [Discovery Tool](https://github.com/voodootikigod/node-rolling-spider/blob/master/eg/discover.js) to get the UUID of all nearby BLE devices.
 
