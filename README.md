@@ -3,6 +3,12 @@
 An implementation of the networking protocols (Bluetooth LE) used by the
 Parrot MiniDrone - [Rolling Spider](http://www.parrot.com/usa/products/rolling-spider/).
 
+If you're interested in using your Rolling-Spider drone through an Amazon Echo voice-controlled interface, check out our repo's and follow the instructions.
+
+* [Voice Controlled Drone Interface](https://github.com/TylerSmall19/spi-net)
+* [Alexa Skill Interface](https://github.com/TylerSmall19/spi-net-skill)
+
+
 Prerequisites:
 
  * See [noble prerequisites](https://github.com/sandeepmistry/noble#prerequisites) for your platform
@@ -15,7 +21,7 @@ npm install spi-net
 
 ## Status
 
-Version 1.0
+Version 1.0.8
 
 
 ## Getting Started
